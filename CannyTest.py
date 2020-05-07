@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 
+# Create VideoCapture object to look through camera '0' (default)
 cap = cv2.VideoCapture(0)
 
 while True:
@@ -20,7 +21,11 @@ while True:
     # show images
     cv2.imshow("image", image)
     cv2.imshow("edges", edges)
+
+    # When looking at images, press q to exit
     if cv2.waitKey(1) == ord("q"):
         break
+
+# Release video capture object
 cap.release()
 cv2.destroyAllWindows()
