@@ -11,6 +11,8 @@ pip install matplotlib opencv-python numpy
 
 Once installed can run each script individually (using python3), for the CannyTest and for the ImageSorter it will open up your webcam in case you get a shock!
 
+If you want to run the detection over static inputs, just input the file path as an argument when running the program. It will accept multiple files but will analyse them one after the other. Press 'q' to close a live feed or to move onto the next image
+
 ### Current status
 
 When run you will see a parameters frame and the frame with the relevant images. Currently the preset paramaters for threshold and area work fine. However when looking at the images in the frame if there is a lot of noise, try increasing the minimum threshold. This works best for images with really diverse lighting / backgrounds. If you have an image with a blank background, clear lighting and really clear shapes the current settings should work. Feel free to play with the settings though, thats why there are the trackbars! The shape detection is a bit finicky at the moment with a lot of noise being a problem as well as dealing with shapes that have multiple colours, I'm looking into better detection methods. I might have reached the end of the line with working with OpenCV and it's inbuilt functionality, I'm starting to look at some machine learning methods.
