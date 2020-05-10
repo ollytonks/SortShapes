@@ -43,4 +43,4 @@ Machine learning notes:
 - [X] Write on read me what thresholds to use usually
 - [ ] Customisable image dilation for finer images
 - [X] **Look into ML tools for object detection in images**
-
+- [ ] Build random geometric shape generator
