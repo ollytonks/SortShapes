@@ -10,8 +10,8 @@ def paramInit():
     cv2.namedWindow("Parameters")
     cv2.resizeWindow("Parameters",640,240)
     cv2.createTrackbar("Max Thresh","Parameters",255,255,np.empty)
-    cv2.createTrackbar("Min Thresh","Parameters",125,255,np.empty)
-    cv2.createTrackbar("Scale Percent","Parameters",50,200,np.empty)
+    cv2.createTrackbar("Min Thresh","Parameters",188,255,np.empty)
+    cv2.createTrackbar("Scale Percent","Parameters",75,200,np.empty)
     cv2.createTrackbar("Area","Parameters",5000,30000,np.empty)
 
 def stackImages(images, percent=25):
