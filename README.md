@@ -17,6 +17,8 @@ If you want to run the detection over static inputs, just input the file path as
 
 When run you will see a parameters frame and the frame with the relevant images. Currently the preset paramaters for threshold and area work fine. However when looking at the images in the frame if there is a lot of noise, try increasing the minimum threshold. This works best for images with really diverse lighting / backgrounds. If you have an image with a blank background, clear lighting and really clear shapes the current settings should work. Feel free to play with the settings though, thats why there are the trackbars! The shape detection is a bit finicky at the moment with a lot of noise being a problem as well as dealing with shapes that have multiple colours, I'm looking into better detection methods. I might have reached the end of the line with working with OpenCV and it's inbuilt functionality.
 
+Working on utilising adaptive thresholding, but it seems to have the same use as normal.
+
 Machine learning notes:
 - There are a lot of tools out there to use; tensorflow, keras, lasagne, scikit-learn
 - Autoencoder is seriously promising for reducing image noise effectively. This could then be plugged in to work with OpenCV contour detection for some noice shape detection
@@ -32,15 +34,15 @@ Machine learning notes:
 - [x] Adjustable threshold for images
 - [x] Stack images for easy threshold manipulation
 - [X] Have option to run detection on static image input
-- [ ] Review comments, maybe too much?
+- [x] Review comments, maybe too much? (it's fine)
 - [x] Detect images based on vertice and canny algorithm
-- [X] **Look into machine learning shape detection for better noise handling**
+- [x] **Look into machine learning shape detection for better noise handling**
 - [ ] Create ShapeDetector object for some delicious object oriented design, need to reduce file length
-- [ ] Look into dynamic threshold calculators for reduced human input
-- [ ] Try a threshold image input to reduce noise instead of customisable threshold 
+- [x] Look into dynamic threshold calculators for reduced human input
+- [ ] Try a threshold image input to reduce noise instead of customisable thresholding for canny algorithm
 - [ ] Review classification placement, can be visually cluttered
-- [ ] Create demonstration video / pictures
-- [X] Write on read me what thresholds to use usually
+- [x] Create demonstration video / pictures
+- [x] Write on read me what thresholds to use usually
 - [ ] Customisable image dilation for finer images
 - [X] **Look into ML tools for object detection in images**
 - [ ] Build random geometric shape generator
